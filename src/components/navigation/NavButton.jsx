@@ -1,29 +1,20 @@
-import {
-  Github,
-  Home,
-  Linkedin,
-  NotebookText,
-  Palette,
-  Phone,
-  Twitter,
-  User,
-} from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import ResponsiveComponent from "../ResponsiveComponent";
 import clsx from "clsx";
+
 import { motion } from "framer-motion";
-import { FcHome } from "react-icons/fc";
 import { PiDnaThin } from "react-icons/pi";
 import { FaMasksTheater } from "react-icons/fa6";
 import { TbBuildingFactory2 } from "react-icons/tb";
+import { Home } from "lucide-react";
 
 const getIcon = (icon) => {
   switch (icon) {
     case "home":
-      return <FcHome className="w-full h-auto" strokeWidth={1.5} />;
+      return <Home className="w-full h-auto" strokeWidth={1.5} />;
     case "about":
-      return <User className="w-full h-auto" strokeWidth={1.5} />;
+      return <TbBuildingFactory2 className="w-full h-auto" strokeWidth={1.5} />;
     case "projects":
       return <PiDnaThin className="w-full h-auto" strokeWidth={1.5} />;
     case "contact":
