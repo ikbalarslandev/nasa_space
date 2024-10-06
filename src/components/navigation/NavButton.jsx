@@ -13,25 +13,23 @@ import React from "react";
 import ResponsiveComponent from "../ResponsiveComponent";
 import clsx from "clsx";
 import { motion } from "framer-motion";
+import { FcHome } from "react-icons/fc";
+import { PiDnaThin } from "react-icons/pi";
+import { FaMasksTheater } from "react-icons/fa6";
+import { TbBuildingFactory2 } from "react-icons/tb";
 
 const getIcon = (icon) => {
   switch (icon) {
     case "home":
-      return <Home className="w-full h-auto" strokeWidth={1.5} />;
+      return <FcHome className="w-full h-auto" strokeWidth={1.5} />;
     case "about":
       return <User className="w-full h-auto" strokeWidth={1.5} />;
     case "projects":
-      return <Palette className="w-full h-auto" strokeWidth={1.5} />;
+      return <PiDnaThin className="w-full h-auto" strokeWidth={1.5} />;
     case "contact":
-      return <Phone className="w-full h-auto" strokeWidth={1.5} />;
-    case "github":
-      return <Github className="w-full h-auto" strokeWidth={1.5} />;
-    case "linkedin":
-      return <Linkedin className="w-full h-auto" strokeWidth={1.5} />;
-    case "twitter":
-      return <Twitter className="w-full h-auto" strokeWidth={1.5} />;
+      return <FaMasksTheater className="w-full h-auto" strokeWidth={1.5} />;
     case "resume":
-      return <NotebookText className="w-full h-auto" strokeWidth={1.5} />;
+      return <TbBuildingFactory2 className="w-full h-auto" strokeWidth={1.5} />;
 
     default:
       return <Home className="w-full h-auto" strokeWidth={1.5} />;
