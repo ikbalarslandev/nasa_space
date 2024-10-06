@@ -23,5 +23,4 @@ export const BtnList = [
   { label: "Home", link: "/", icon: "home", newTab: false },
   { label: "Factory", link: "/factory", icon: "about", newTab: false },
   { label: "Life", link: "/life", icon: "projects", newTab: false },
-  { label: "Fun", link: "/fun", icon: "contact", newTab: false },
 ];
